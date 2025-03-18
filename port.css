@@ -1,0 +1,829 @@
+html, body{
+    overflow-x: hidden;
+    
+}
+*{
+    font-weight: bold;
+
+    margin: 0;
+    padding: ;
+    font-family: 'Times New Roman', Times, serif;
+    
+    
+}
+.header{
+    min-height:5vh;
+    width: 100%;
+    background-color: teal;
+}
+.header nav{
+    
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    font: poppins;
+    font-size: 14px
+
+
+}
+.header links{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.header nav a{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    font: poppins;
+    padding: 30px;
+}
+.header nav img{
+    width: 18;
+}
+.header icons{
+    display: flex;
+    gap: 15px;
+
+}
+.header icons{
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+}
+.header icons a:hover {
+    color:lightgray;
+
+}
+
+
+.header1{
+    
+    min-height:12vh;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);;
+}
+
+.header1 nav{
+    display: flex;
+    padding: 2% 10%;
+    justify-content: space-between;
+    align-items: centre;
+
+}
+.header1 nav img{
+    width: 70px;
+    
+}
+.nav-links{
+    flex: 1;
+    text-align: right ;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    font: poppins;
+    padding: 10px 18px;
+    position: relative;
+
+}
+.nav-links ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 25px;
+}
+.nav-links ul li a:hover {
+    color: teal;
+    transition: 0.3s ease-in-out;
+}
+.total {
+    position: relative;
+    background: none;
+    opacity: 0.9;
+}
+
+.total::before {
+    content: "";
+    position: fixed; /* Changed from fixed to absolute */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/bg2.png') no-repeat center center;
+    background-size: cover;
+    opacity: 0.045; /* Adjust opacity here */
+    z-index: -1;
+    pointer-events: none; /* Allows clicks to pass through */
+}
+.abtp{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.topp{
+    position: relative;
+
+}
+@keyframes fadeUp {
+    0% {
+    opacity: 0;
+    transform: translateY(30px);
+    }
+    100% {
+    opacity: 1;
+    transform: translateY(0);
+    }
+}
+
+.topp h1{
+    position: relative;
+    animation: fadeUp 1.2s ease forwards;
+    
+    top: 200px;
+    left: 30%;
+    font-size: 140px;
+    
+    text-transform: lowercase;
+    background: linear-gradient(to right, #005f73, #001d3d);
+    background-clip: text;
+    color: transparent;
+}
+.topp p{
+    position: relative;
+    color: #333;
+    font-size: 20px;
+    top: 220px;
+    left: 30%;
+    width: 500px;
+    animation: fadeUp 1.5s ease forwards;
+}
+.topp a img{
+    position: relative;
+    left: 165%;
+    top: -50px;
+}
+.topf{
+    top:100px;
+    left: 25%;
+    position:relative;
+    text-align: center;
+    width: 750px;
+
+
+
+}
+.topf h1{
+    line-height: 1.5;
+    color: black;
+    padding-left: 35px;
+    padding-top: 15px;
+    font-size: 38px;
+    font: poppins;
+
+}
+.topf p{
+    line-height: 1.5;
+    color: #333;
+    padding-top: 10px;
+    padding-left: 35px;
+    padding-bottom: 15px;
+    text-align: center;
+    font-size: 20px;
+    font: poppins;
+    
+
+}
+
+.website-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.cont {
+    display: flex;
+    align-items: center;
+    width: 80%;
+}
+
+.logo-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.logo3 {
+    width: 350px;
+    height: auto;
+    
+    top: 20px;
+    position: relative;
+}
+
+.text-cont {
+    position: relative;
+    flex: 2;
+    padding-left: 40px;
+    width:500px;
+    left:15%;
+    top:80px;
+   
+}
+
+.titles {
+    line-height: 1.5;
+    font-size: 38px;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    background: linear-gradient(to right,  #001d3d,#005f73);
+    background-clip: text;
+    color: transparent;
+    text-align: left;
+    position: relative;
+    text-decoration-color: rgb(1, 42, 42); /* Ensures visible underline */
+    text-decoration-thickness: 2px; /* Adjust thickness if needed */
+    text-underline-offset: 5px;
+    
+}
+
+.titles span {
+    background: linear-gradient(to right,  #001d3d,#005f73);
+    background-clip: text;
+    color: transparent;
+}
+
+.tags {
+    margin: 15px 0;
+    text-align: left;
+    
+}
+
+.tag1 {
+    line-height: ;
+    display: inline-block;
+    background: teal;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    margin-right: 10px;
+    font-size: 17px;
+}
+
+.descrip {
+    font-size: 17px;
+    color: #333;
+    line-height: 1.6;
+    text-align: justify;
+    width: 600px;
+}
+
+.social-icons {
+    position: relative;
+    top: -80%;
+    left: -75%;
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Space between icons */
+}
+
+.social-icons .icon-container {
+    position: relative;
+    display: inline-block;
+}
+
+.social-icons img {
+    
+    margin-right: 15px;
+    cursor: pointer;
+    border-radius: 100%;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease;
+}
+
+/* Hover effect: Change icon background color and scale */
+.social-icons img:hover {
+    background-color:rgb(9, 203, 203);
+    transform: scale(1.1);
+}
+
+/* Tooltip Text (Initially Hidden) */
+.social-icons .tooltip {
+    position: absolute;
+    bottom: -30px; /* Adjust position */
+    left: 50%;
+    transform: translateX(-50%);
+    
+    color: #333;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Show Tooltip on Hover */
+.social-icons .icon-container:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(-5px);
+}
+
+.website-section1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.cont1 {
+    display: flex;
+    align-items: center;
+    width: 80%;
+}
+
+.logo-container1 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.logo31 {
+    width: 350px;
+    height: auto;
+    
+    top: 20px;
+    position: relative;
+}
+
+.text-cont1 {
+    position: relative;
+    flex: 2;
+    padding-left: 40px;
+    width:500px;
+    left:15%;
+    top:80px;
+   
+}
+
+.titles1 {
+    line-height: 1.5;
+    font-size: 38px;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-color: rgb(1, 42, 42); /* Ensures visible underline */
+    text-decoration-thickness: 2px; /* Adjust thickness if needed */
+    text-underline-offset: 5px;
+    text-align: left;
+    position: relative;
+    background: linear-gradient(to right,  #001d3d,#005f73);
+    background-clip: text;
+    color: transparent;
+    
+}
+
+.titles1 span {
+    background: linear-gradient(to right,  #001d3d,#005f73);
+    background-clip: text;
+    color: transparent;
+}
+
+.tags1 {
+    margin: 15px 0;
+    text-align: left;
+    
+}
+
+.tag11 {
+    line-height: ;
+    display: inline-block;
+    background: teal;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    margin-right: 10px;
+    font-size: 17px;
+}
+
+.descrip1 {
+    font-size: 17px;
+    color: #333;
+    line-height: 1.6;
+    text-align: justify;
+    width: 600px;
+}
+
+.social-icons1 {
+    position: relative;
+    top: -80%;
+    left: -75%;
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Space between icons */
+}
+
+.social-icons1 .icon-container1 {
+    position: relative;
+    display: inline-block;
+}
+
+.social-icons1 img {
+    
+    margin-right: 15px;
+    cursor: pointer;
+    border-radius: 100%;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease;
+}
+
+/* Hover effect: Change icon background color and scale */
+.social-icons1 img:hover {
+    background-color:rgb(9, 203, 203);
+    transform: scale(1.1);
+}
+
+/* Tooltip Text (Initially Hidden) */
+.social-icons1 .tooltip1 {
+    position: absolute;
+    bottom: -30px; /* Adjust position */
+    left: 50%;
+    transform: translateX(-50%);
+    
+    color: #333;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Show Tooltip on Hover */
+.social-icons1 .icon-container1:hover .tooltip1 {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(-5px);
+}
+.website-section11 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.cont11 {
+    display: flex;
+    align-items: center;
+    width: 80%;
+}
+
+.logo-container11 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.logo311 {
+    width: 350px;
+    height: auto;
+    left:235%;
+    top: 20px;
+    position: relative;
+}
+
+.text-cont11 {
+    position: relative;
+    flex: 2;
+    padding-left: 40px;
+    width:500px;
+    left:-35%;
+    top:80px;
+   
+}
+
+.titles11 {
+    line-height: 1.5;
+    font-size: 38px;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-color: rgb(1, 42, 42); /* Ensures visible underline */
+    text-decoration-thickness: 2px; /* Adjust thickness if needed */
+    text-underline-offset: 5px;
+    text-align: left;
+    position: relative;
+    background: linear-gradient(to right,  #001d3d,#005f73);
+    background-clip: text;
+    color: transparent;
+}
+
+.titles11 span {
+    background: linear-gradient(to right,  #001d3d,#005f73);
+    background-clip: text;
+    color: transparent;
+}
+
+.tags11 {
+    margin: 15px 0;
+    text-align: left;
+    
+}
+
+.tag111 {
+    line-height: ;
+    display: inline-block;
+    background: teal;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    margin-right: 10px;
+    font-size: 17px;
+}
+
+.descrip11 {
+    font-size: 17px;
+    color: #333;
+    line-height: 1.6;
+    text-align: justify;
+    width: 600px;
+}
+
+.social-icons11 {
+    position: relative;
+    top: -80%;
+    left: 110%;
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Space between icons */
+}
+
+.social-icons11 .icon-container11 {
+    position: relative;
+    display: inline-block;
+}
+
+.social-icons11 img {
+    
+    margin-right: 15px;
+    cursor: pointer;
+    border-radius: 100%;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease;
+}
+
+/* Hover effect: Change icon background color and scale */
+.social-icons11 img:hover {
+    background-color:rgb(9, 203, 203);
+    transform: scale(1.1);
+}
+
+/* Tooltip Text (Initially Hidden) */
+.social-icons11 .tooltip11 {
+    position: absolute;
+    bottom: -30px; /* Adjust position */
+    left: 50%;
+    transform: translateX(-50%);
+    
+    color: #333;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Show Tooltip on Hover */
+.social-icons11 .icon-container11:hover .tooltip11 {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(-5px);
+}
+.common{
+    position: relative;
+    top:1400px;
+}
+
+.get{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+.gq{
+    top:-1300px;
+    left:25%;
+    position: absolute;
+    text-align: center;
+    
+}
+.gq h1{
+    line-height: 1.5;
+    color: black;
+    padding-left: 35px;
+    padding-top: 15px;
+    font-size: 38px;
+    font: poppins;
+    
+    
+}
+.gq p{
+    line-height: 1.5;
+    color: #333;
+    padding-top: 10px;
+    padding-left: 35px;
+    padding-bottom: 15px;
+    text-align: center;
+    font-size: 20px;
+    font: poppins;
+    }
+
+.container {
+    bottom: 400px; 
+    left: 16%;
+    position: absolute;
+    display: flex;
+    max-width: 1400px;
+    margin: 70px auto;
+    background: teal;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.left {
+    flex: 1;
+}
+.left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.right {
+    flex: 1;
+    padding: 30px;
+    background: teal;
+    color: white;
+}
+.right h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+.form-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.form-group input, select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 10px 0;
+}
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.discount {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+.button {
+    width: 80%;
+    padding: 12px;
+    background: white;
+    color: teal;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.button:hover {
+    background: lightgray;
+}
+.footer {
+    background-color: teal;
+    color: white;
+    padding: 40px 0;
+    gap: 150px;
+    position: relative;
+    top:1200px;
+    
+    
+}
+
+.container3 {
+    display: flex;
+    position: relative;
+    bottom: 0px;
+    margin:auto;
+    margin-left: 100px;
+    flex-wrap: wrap;
+}
+
+
+.footer-section h4{
+    font-size: 28px;
+    margin-bottom: 15px;
+    position: relative;
+    
+    left:205%;
+
+}
+
+.footer-section h2{
+    font-size: 28px;
+    margin-bottom: 15px;
+    position: relative;
+    left: 40%;
+    
+}
+.footer-section h3{
+    font-size: 28px;
+    margin-bottom: 15px;
+    position: relative;
+    
+    left:205%;
+
+}
+.footer p {
+    position: relative;
+    font-size: 17px;
+    line-height: 1.6;
+    color: white;
+    left: 40%;
+    
+}
+
+
+
+.footer-section ul {
+    list-style: none;
+    padding-left:10px ;
+    position: relative;
+    left: 200%;
+    
+   
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: lightgray;
+}
+
+.logo {
+    position: relative;
+    top: -5px;
+    width: 60px;
+    vertical-align: middle;
+    margin-left: 5px;
+    background-color: teal;
+}
+
+
+
+
